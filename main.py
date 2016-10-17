@@ -24,7 +24,10 @@ def display(command):
     if command=="off":
         x.fill(0)
         x.show()
-    if (command!="time") & (command!="off"):
+    if command=="display":
+        x.fill(1) 
+        x.show()
+    if (command!="time") & (command!="off") & (command!="display"):
         x.fill(0)
         x.text(command,1,1)
         x.show()
